@@ -43,10 +43,23 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+@font-face {
+    font-family: 'Graffiti';
+    src: url('../fonts/Graffiti1C_Regular.eot');
+    src: url('../fonts/Graffiti1C_Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Graffiti1C_Regular.woff') format('woff'),
+    url('../fonts/Graffiti1C_Regular.ttf') format('truetype'),
+    url('../fonts/Graffiti1C_Regular.svg#pf_agora_sans_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.content {
+    width: 1024px;
+    margin: 0 auto;
+}
 .wrap-header {
     z-index: 70;
     position:fixed;
@@ -59,6 +72,7 @@ a:hover                        { text-decoration:none; }
     height: 100%;
 }
 .section {
+    position: relative;
     height: 100%;
     background-position: top center;
     background-size: cover;
@@ -165,6 +179,10 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.main-logo h1 {
+    font: 46px 'Graffiti';
+    color: #fff;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -181,4 +199,26 @@ a:hover                        { text-decoration:none; }
     .section {
         background-size: 100% 100%;
     }
+}
+.center {
+    text-align: center;
+}
+.btn-toggle-page a {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 32px;
+    cursor: pointer;
+    text-indent: -9999px;
+    z-index: 100;
+}
+.btn-bottom a {
+    bottom: 15px;
+    background: url("../images/arrow_bottom.png") no-repeat;
+}
+.btn-top a {
+    top: 60px;
+    background: url("../images/arrow_top.png") no-repeat;
 }

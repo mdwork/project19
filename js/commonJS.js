@@ -11,8 +11,7 @@ $(document).ready(function() {
             fitSection: false,
             menu: '#menu',
             navigation:true,
-
-            paddingTop: '20px',
+            paddingTop: '0',
             css3: true
         });
     }
