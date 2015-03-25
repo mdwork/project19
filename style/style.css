@@ -59,9 +59,18 @@ a:hover                        { text-decoration:none; }
     background-position: top center;
     background-size: cover;
 }
-.section1 {
+.section1,
+.section5 {
     background-image: url("../images/bg/first_page.jpg");
 }
+.section2,
+.section4 {
+    background-image: url("../images/bg/second_page.jpg");
+}
+.section3 {
+    background-image: url("../images/bg/third_page.jpg");
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
