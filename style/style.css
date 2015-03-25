@@ -202,6 +202,9 @@ a:hover                        { text-decoration:none; }
         .list-cart li a {
             display: block;
         }
+    .list-cart li:hover {
+        background: rgba(0, 0, 0, .6);
+    }
     .list-cart li:hover .name-cart {
         background: #9DB424;
     }
@@ -233,6 +236,102 @@ a:hover                        { text-decoration:none; }
         width: 440px;
         margin: 0 auto;
     }
+    .two-column {
+        overflow: hidden;
+        display: inline-block;
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+        .desc-goods {
+            position: relative;
+            height: 570px;
+            background: rgba(0, 0, 0, .5);
+        }
+        .wrap-desc {
+            padding: 0 40px;
+        }
+        .btn-add-basket {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 55px;
+            width: 100%;
+            border: none;
+            background: #a3c10b;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .btn-add-basket:hover {
+            background: #8EA90A;
+        }
+        .right-column {
+            padding: 0 30px;
+        }
+            .right-column .list-charact-goods .value {
+                text-align: right;
+            }
+            .name-section {
+                font: 30px 'Graffiti';
+                color: #a3c00b;
+            }
+            .list-charact-goods {
+                overflow: hidden;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+                .list-charact-goods li {
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                }
+                .total li {
+                    padding: 7px 55px 7px 45px;
+                    background: rgba(0, 0, 0, .5);
+                }
+                    .name-charact {
+                        float: left;
+                    }
+                    .list-charact-goods .value {
+                        float: right;
+                        width: 95px;
+                        text-align: center;
+                    }
+                        .block-calc {
+                            float: right;
+                            width: 45px;
+                            margin-left: 10px;
+                            background: rgba(0, 0, 0, .5);
+                            font-size: 24px;
+                            text-align: center;
+                            min-height: 1px;
+                        }
+                            .block-calc span {
+                                cursor: pointer;
+                            }
+            .desc-goods p {
+                font-size: 14.5px;
+                line-height: 1.3;
+            }
+            .wrap-foto-goods {
+                position: relative;
+                display: table;
+                height: 280px;
+                width: 100%;
+                text-align: center;
+            }
+                .wrap-foto-goods .wrap-foto {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                .btn-increase {
+                    display: block;
+                    position: absolute;
+                    right: 50px;
+                    bottom: 20px;
+                    width: 27px;
+                    height: 27px;
+                    background: url("../images/content/btn_increase.png") no-repeat;
+                }
         .inner-middle-block .top-block {
             display: table;
             width: 100%;
