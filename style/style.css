@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px arial, sans-serif; background:#fff; color:#000; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -17,7 +17,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px arial, sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -55,7 +55,11 @@ a:hover                        { text-decoration:none; }
     width: 100%;
     background: rgba(0, 0, 0, .5);
 }
+#myContainer {
+    height: 100%;
+}
 .section {
+    height: 100%;
     background-position: top center;
     background-size: cover;
 }
@@ -70,7 +74,10 @@ a:hover                        { text-decoration:none; }
 .section3 {
     background-image: url("../images/bg/third_page.jpg");
 }
-
+#section0 .none,
+#section0 .fp-controlArrow {
+    display: none;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -84,6 +91,10 @@ a:hover                        { text-decoration:none; }
         .main-nav li {
             display:inline-block;
         }
+            .main-nav a {
+                font-size: 16px;
+                color: #fff;
+            }
     .right-block-header {
         float: right;
     }

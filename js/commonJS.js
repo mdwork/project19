@@ -13,7 +13,7 @@ $(document).ready(function() {
             navigation:true,
 
             paddingTop: '20px',
-            css3: true,
+            css3: true
         });
     }
 
