@@ -84,11 +84,11 @@ a:hover                        { text-decoration:none; }
 .header {
     overflow: hidden;
     width: 905px;
-    margin: 8px auto 9px;
+    margin: 5px auto 9px;
 }
     .main-nav {
         float: left;
-        margin-top: 4px;
+        margin-top: 10px;
     }
         .main-nav li {
             display:inline-block;
@@ -119,6 +119,7 @@ a:hover                        { text-decoration:none; }
         .search-form {
             float: left;
             padding: 3px 10px;
+            margin-top: 8px;
             background: rgba(255, 255, 255, .5);
         }
             .search-form .btn-text,
@@ -140,8 +141,27 @@ a:hover                        { text-decoration:none; }
                 font-size: 16px;
             }
         .setting-cart {
+            overflow: hidden;
             float: right;
         }
+            .setting-cart li {
+                float: left;
+                margin-left: 17px;
+            }
+                .setting-cart a {
+                    display: inline-block;
+                    height: 37px;
+                    text-indent: -9999px;
+                    color: #fff;
+                    background: url("../images/header/icon_header_sprite.png") no-repeat;
+                }
+                .personal-settings a {
+                    width: 28px;
+                }
+                .cart a {
+                    width: 48px;
+                    background-position: -46px 0;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
