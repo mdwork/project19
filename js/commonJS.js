@@ -18,4 +18,16 @@ $(document).ready(function() {
 
     //fullPage.js initialization
     initialization();
+
+    $('.list-cart').each(function(){
+        var $this = $(this),
+            len = $this.children('li').length;
+
+        if(len < 10) {
+            var cntItems = len / 2,
+                widthListCarts = Math.round(cntItems) * 212;
+
+            $this.width(widthListCarts);
+        }
+    });
 });
