@@ -82,22 +82,66 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header {
+    overflow: hidden;
     width: 905px;
-    margin: 0 auto;
+    margin: 8px auto 9px;
 }
     .main-nav {
         float: left;
+        margin-top: 4px;
     }
         .main-nav li {
             display:inline-block;
+            padding: 0 3px;
+            margin: 0 8px;
+        }
+        .main-nav li:first-child {
+            margin-left: 0;
+        }
+        .main-nav li:last-child {
+            margin-right: 0;
         }
             .main-nav a {
                 font-size: 16px;
                 color: #fff;
+                text-decoration: none;
+            }
+            .main-nav .active a,
+            .main-nav a:hover {
+                color: #9fb718;
+            }
+            .main-nav .active {
+                border-bottom: 2px solid #fff;
             }
     .right-block-header {
         float: right;
     }
+        .search-form {
+            float: left;
+            padding: 3px 10px;
+            background: rgba(255, 255, 255, .5);
+        }
+            .search-form .btn-text,
+            .search-form .btn-search {
+                border: none;
+                color: #fff;
+                font-size: 12px;
+                background: none;
+            }
+            .search-form .btn-text {
+                width: 75px;
+            }
+                .search-form .btn-text::-webkit-input-placeholder {color: #fff;}
+                .search-form .btn-text::-moz-placeholder          {color: #fff;}
+                .search-form .btn-text:-moz-placeholder           {color: #fff;}
+                .search-form .btn-text:-ms-input-placeholder      {color: #fff;}
+
+            .search-form .btn-search {
+                font-size: 16px;
+            }
+        .setting-cart {
+            float: right;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
