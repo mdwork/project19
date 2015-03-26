@@ -60,6 +60,10 @@ a:hover                        { text-decoration:none; }
     width: 1024px;
     margin: 45px auto;
 }
+.content-2 {
+    width: 1024px;
+    margin: 0 auto;
+}
 .wrap-header {
     z-index: 70;
     position:fixed;
@@ -91,6 +95,7 @@ a:hover                        { text-decoration:none; }
     background-image: url("../images/bg/third_page.jpg");
 }
 .personal-page {
+    overflow: hidden;
     background-image: url("../images/bg/fourth_page.jpg");
     background-size: cover;
 }
@@ -260,6 +265,21 @@ a:hover                        { text-decoration:none; }
     .list-cart-contact > li.active .name-cart {
         background: #9DB424;
     }
+        .regulator {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-size: 23px;
+        }
+            .regulator span {
+                cursor: pointer;
+            }
+        .cnt {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 27px;
+        }
         .wrap-foto-cart {
             display: table;
             height: 133px;
@@ -269,7 +289,8 @@ a:hover                        { text-decoration:none; }
                 display: table-cell;
                 vertical-align: middle;
             }
-        .name-cart {
+        .name-cart,
+        .list-cart-contact.fonts .name-cart {
             position: absolute;
             bottom: 0;
             display: table;
@@ -529,12 +550,15 @@ a:hover                        { text-decoration:none; }
             .list-items-dark input:-ms-input-placeholder      {color: #fff;}
 
             .btn-transp {
+                display: inline-block;
                 width: 100%;
                 border: none;
                 color: #fff;
+                padding: 13px 0 !important;
+                background: rgba(0, 0, 0, .6) !important;
             }
             .btn-transp:hover {
-                background: #9ab21e;
+                background: #9ab21e !important;
             }
             .btn-middle {
                 width: 195px;
@@ -557,6 +581,9 @@ a:hover                        { text-decoration:none; }
             }
                 .green {
                     color: #9ab21e;
+                }
+                .list-items-dark .green {
+                    font-size: 18px;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
@@ -626,4 +653,13 @@ a:hover                        { text-decoration:none; }
 .no-bg {
     padding: 0 !important;
     background: none !important;
+}
+.inner-slider-custom .fp-tableCell {
+    height: auto !important;
+}
+.custom-block {
+    margin-top: 70px;
+}
+.inner-slider-custom .fp-controlArrow {
+    margin-top: 0;
 }
