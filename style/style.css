@@ -506,6 +506,9 @@ a:hover                        { text-decoration:none; }
         .list-items-dark li:first-child {
             margin-top: 0;
         }
+        .list-items-dark li.active {
+            background: #9ab21e !important;
+        }
             .list-items-dark input,
             .list-items-dark a {
                 padding: 0;
@@ -530,6 +533,23 @@ a:hover                        { text-decoration:none; }
             }
             .btn-middle {
                 width: 195px;
+            }
+    .list-two-column {
+        overflow: hidden;
+        text-align: center;
+    }
+        .list-two-column > li {
+            display: inline-block;
+            margin-left: 45px;
+        }
+        .list-two-column > li:first-child {
+            margin-left: 0;
+        }
+            .list-two-column .list-items-dark li {
+                padding-left: 50px;
+                text-align: left;
+                font-size: 18px;
+                background: rgba(0, 0, 0, .6);
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
