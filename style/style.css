@@ -187,6 +187,29 @@ a:hover                        { text-decoration:none; }
     font: 46px 'Graffiti';
     color: #fff;
 }
+.wrap-inner-slider {
+    position: relative;
+    display: table;
+    width: 930px;
+    height: 670px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+    .wrap-inner-slider .top-desc,
+    .wrap-inner-slider .bottom-desc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 21px 0;
+        background: rgba(0, 0, 0, .5);
+        font-size: 20px;
+    }
+    .wrap-inner-slider .bottom-desc {
+        top: auto;
+        bottom: 0;
+    }
 .list-cart {
     overflow: hidden;
     display: inline-block;
@@ -319,7 +342,7 @@ a:hover                        { text-decoration:none; }
                 width: 100%;
                 text-align: center;
             }
-                .wrap-foto-goods .wrap-foto {
+                .wrap-foto {
                     display: table-cell;
                     vertical-align: middle;
                 }
