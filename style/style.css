@@ -90,7 +90,7 @@ a:hover                        { text-decoration:none; }
 .section3 {
     background-image: url("../images/bg/third_page.jpg");
 }
-.study-page {
+.personal-page {
     background-image: url("../images/bg/fourth_page.jpg");
     background-size: cover;
 }
@@ -202,6 +202,9 @@ a:hover                        { text-decoration:none; }
 .name-page {
     margin-bottom: 20px;
     font: 36px 'Graffiti';
+}
+.name-page span {
+    color: #99b11b;
 }
 .wrap-inner-slider {
     position: relative;
@@ -496,10 +499,11 @@ a:hover                        { text-decoration:none; }
         margin: 0 auto;
     }
         .list-items-dark li,
-        .btn-middle {
+        .btn-transp {
+            min-height: 19px;
             margin-top: 11px;
             padding: 13px 0;
-            background: rgba(0, 0, 0, .5);
+            background: rgba(0, 0, 0, .6);
             text-align: center;
             font-size: 15px;
         }
@@ -525,6 +529,7 @@ a:hover                        { text-decoration:none; }
             .list-items-dark input:-ms-input-placeholder      {color: #fff;}
 
             .btn-transp {
+                width: 100%;
                 border: none;
                 color: #fff;
             }
@@ -545,12 +550,14 @@ a:hover                        { text-decoration:none; }
         .list-two-column > li:first-child {
             margin-left: 0;
         }
-            .list-two-column .list-items-dark li {
+            .left .list-items-dark li {
                 padding-left: 50px;
                 text-align: left;
                 font-size: 18px;
-                background: rgba(0, 0, 0, .6);
             }
+                .green {
+                    color: #9ab21e;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
