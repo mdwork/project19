@@ -210,11 +210,13 @@ a:hover                        { text-decoration:none; }
         top: auto;
         bottom: 0;
     }
-.list-cart {
+.list-cart,
+.list-cart-contact {
     overflow: hidden;
     display: inline-block;
 }
-    .list-cart li {
+    .list-cart li,
+    .list-cart-contact li {
         position: relative;
         display: inline-block;
         width: 180px;
@@ -222,13 +224,17 @@ a:hover                        { text-decoration:none; }
         margin: 0 6px 40px;
         background: rgba(0, 0, 0, .5);
     }
-        .list-cart li a {
+        .list-cart li a,
+        .list-cart-contact li a {
             display: block;
         }
-    .list-cart li:hover {
+    .list-cart li:hover,
+    .list-cart-contact li:hover {
         background: rgba(0, 0, 0, .6);
     }
-    .list-cart li:hover .name-cart {
+    .list-cart li:hover .name-cart,
+    .list-cart-contact li:hover .name-cart,
+    .list-cart-contact li.active .name-cart {
         background: #9DB424;
     }
         .wrap-foto-cart {
@@ -250,9 +256,34 @@ a:hover                        { text-decoration:none; }
             color: #fff;
             background: url("../images/content/carts/bg_cart.png") no-repeat;
         }
+        .list-cart-contact .name-cart {
+            font: 22px Arial, sans-serif;
+        }
             .name-cart span {
                 display: table-cell;
                 vertical-align: middle;
+            }
+.list-more-info {
+    min-height: 190px;
+    width: 960px;
+    padding: 25px 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+}
+    .list-more-info li {
+        display: none;
+    }
+    .list-more-info li.active {
+        display: block;
+    }
+        .list-more-info span {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+            .list-more-info .email {
+                color: #99b11b;
             }
 
     .inner-middle-block {
