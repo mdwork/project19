@@ -90,6 +90,9 @@ a:hover                        { text-decoration:none; }
 .section3 {
     background-image: url("../images/bg/third_page.jpg");
 }
+.study-page {
+    background-image: url("../images/bg/fourth_page.jpg");
+}
 #section0 .none,
 #section0 .fp-controlArrow {
     display: none;
@@ -176,9 +179,16 @@ a:hover                        { text-decoration:none; }
                 .personal-settings a {
                     width: 28px;
                 }
+                .personal-settings a:hover {
+                    background: url("../images/header/icon_study_hover.png");
+                }
                 .cart a {
                     width: 48px;
-                    background-position: -46px 0;
+                    background-position: -45px 0;
+                }
+                .cart a:hover {
+                    background: url("../images/header/icon_basket_hover.png");
+                    background-position: 0;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -186,6 +196,9 @@ a:hover                        { text-decoration:none; }
 .main-logo h1 {
     font: 46px 'Graffiti';
     color: #fff;
+}
+.name-page {
+    font: 36px 'Graffiti';
 }
 .wrap-inner-slider {
     position: relative;
@@ -512,13 +525,23 @@ a:hover                        { text-decoration:none; }
     top: 60px;
     background: url("../images/arrow_top.png") no-repeat;
 }
-.btn-back a {
+.btn-back a,
+.btn-next a {
     top: 50%;
     left: 60px;
     width: 32px;
     height: 50px;
     margin-top: -50px;
     background: url("../images/arrow_back.png") no-repeat;
+}
+.btn-next a {
+    top: 50%;
+    right: 60px;
+    left: auto;
+    width: 32px;
+    height: 50px;
+    margin-top: -50px;
+    background: url("../images/arrow_next.png") no-repeat;
 }
 .hide {
     display: none;
