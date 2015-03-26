@@ -58,7 +58,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .content {
     width: 1024px;
-    margin: 0 auto;
+    margin: 45px auto;
 }
 .wrap-header {
     z-index: 70;
@@ -100,7 +100,7 @@ a:hover                        { text-decoration:none; }
 .header {
     overflow: hidden;
     width: 905px;
-    margin: 5px auto 9px;
+    margin: 5px auto 3px;
 }
     .main-nav {
         float: left;
