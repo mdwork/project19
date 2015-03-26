@@ -215,8 +215,9 @@ a:hover                        { text-decoration:none; }
     overflow: hidden;
     display: inline-block;
 }
-    .list-cart li,
-    .list-cart-contact li {
+    .list-cart > li,
+    .list-cart-contact > li {
+        overflow: hidden;
         position: relative;
         display: inline-block;
         width: 180px;
@@ -224,17 +225,20 @@ a:hover                        { text-decoration:none; }
         margin: 0 6px 40px;
         background: rgba(0, 0, 0, .5);
     }
-        .list-cart li a,
-        .list-cart-contact li a {
+    .contact-page .list-cart-contact > li {
+        margin-bottom: 15px;
+    }
+        .list-cart > li > a,
+        .list-cart-contact > li > a {
             display: block;
         }
-    .list-cart li:hover,
-    .list-cart-contact li:hover {
+    .list-cart > li:hover,
+    .list-cart-contact > li:hover {
         background: rgba(0, 0, 0, .6);
     }
-    .list-cart li:hover .name-cart,
-    .list-cart-contact li:hover .name-cart,
-    .list-cart-contact li.active .name-cart {
+    .list-cart > li:hover .name-cart,
+    .list-cart-contact > li:hover .name-cart,
+    .list-cart-contact > li.active .name-cart {
         background: #9DB424;
     }
         .wrap-foto-cart {
@@ -282,7 +286,7 @@ a:hover                        { text-decoration:none; }
             margin-bottom: 15px;
             font-size: 22px;
         }
-            .list-more-info .email {
+            .email {
                 color: #99b11b;
             }
             a.btn-more-info {
@@ -296,6 +300,47 @@ a:hover                        { text-decoration:none; }
             a.btn-more-info:hover {
                 background: #9DB424;
             }
+.wrap-map {
+    position: relative;
+    width: 580px;
+    height: 335px;
+    margin: 0 auto;
+}
+    .wrap-map:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        width: 70px;
+        height: 82px;
+        margin: -41px 0 0 -35px;
+        background: url("../images/content/target.png") no-repeat;
+    }
+    .detail-box {
+        position: absolute;
+        top: 35px;
+        right: 110px;
+        padding: 20px;
+        background: rgba(0, 0, 0, .5);
+        text-align: left;
+        font-size: 17px;
+        z-index: 10;
+    }
+    .no-position {
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 20px 15px;
+        background: none;
+    }
+        .detail-box li {
+            margin-bottom: 3px;
+        }
+        .detail-box .email {
+            color: #99b11b;
+        }
 
     .inner-middle-block {
         width: 440px;
@@ -466,6 +511,14 @@ a:hover                        { text-decoration:none; }
 .btn-top a {
     top: 60px;
     background: url("../images/arrow_top.png") no-repeat;
+}
+.btn-back a {
+    top: 50%;
+    left: 60px;
+    width: 32px;
+    height: 50px;
+    margin-top: -50px;
+    background: url("../images/arrow_back.png") no-repeat;
 }
 .hide {
     display: none;

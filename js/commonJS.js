@@ -31,7 +31,7 @@ $(document).ready(function() {
         }
     });
 
-    var listContact = $('.list-cart-contact'),
+    var listContact = $('.toggle-active'),
         listInfoMore = $('.list-more-info');
 
     function addActiveClass(list) {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 
     /*animate home slider*/
-    var itemServiceBlock = $('.list-cart-contact li');
+    var itemServiceBlock = $('.toggle-active li');
 
     itemServiceBlock.on('click', function(e){
         e.preventDefault();
