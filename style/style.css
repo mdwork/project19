@@ -585,6 +585,54 @@ a:hover                        { text-decoration:none; }
                 .list-items-dark .green {
                     font-size: 18px;
                 }
+    .wrap-table {
+        width: 794px;
+        margin: 0 auto;
+    }
+    .order-content {
+        width: 100%;
+        background: rgba(0, 0, 0, .6);
+        text-align: left;
+    }
+        .order-content td:first-child,
+        .order-content th:first-child {
+            width: 410px;
+            padding-left: 30px;
+        }
+        .order-content th {
+            padding: 6px 0;
+            font: 24px 'Graffiti';
+            background: rgba(0, 0, 0, .4);
+        }
+        .order-content td {
+            padding: 7px 0;
+            font-size: 20px;
+        }
+        .order-content .first {
+            padding-top: 15px;
+        }
+        .order-content .last {
+            padding-bottom: 15px;
+        }
+        .order-content .table-space-top {
+            padding-top: 30px;
+        }
+        .order-content .table-space-b {
+            padding-bottom: 30px;
+        }
+        .wrap-table .btn-transp {
+            float: left;
+            width: 397px;
+            margin-top: 0;
+            background: rgba(0, 0, 0, .8) !important;
+            font-size: 20px;
+        }
+        .wrap-table .btn-transp:hover {
+            background: #9ab21e !important;
+        }
+        .order-content .green {
+            font: bold 20px arial, helvetica, sans-serif;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
