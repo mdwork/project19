@@ -285,6 +285,17 @@ a:hover                        { text-decoration:none; }
             .list-more-info .email {
                 color: #99b11b;
             }
+            a.btn-more-info {
+                display: inline-block;
+                font-size: 24px;
+                width: 180px;
+                padding: 15px 0;
+                background: url("../images/content/carts/bg_cart.png") no-repeat;
+                text-decoration: none;
+            }
+            a.btn-more-info:hover {
+                background: #9DB424;
+            }
 
     .inner-middle-block {
         width: 440px;
