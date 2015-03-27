@@ -193,7 +193,8 @@ a:hover                        { text-decoration:none; }
                     width: 48px;
                     background-position: -45px 0;
                 }
-                .cart a:hover {
+                .cart a:hover,
+                .cart.active a {
                     background: url("../images/header/icon_basket_hover.png");
                     background-position: 0;
                 }
@@ -241,7 +242,6 @@ a:hover                        { text-decoration:none; }
 }
     .list-cart > li,
     .list-cart-contact > li {
-        overflow: hidden;
         position: relative;
         display: inline-block;
         width: 180px;
@@ -264,6 +264,10 @@ a:hover                        { text-decoration:none; }
     .list-cart-contact > li:hover .name-cart,
     .list-cart-contact > li.active .name-cart {
         background: #9DB424;
+
+        -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow:    3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow:         3px 4px 5px 0px rgba(0, 0, 0, 0.75);
     }
         .regulator {
             position: absolute;
@@ -411,6 +415,12 @@ a:hover                        { text-decoration:none; }
             color: #fff;
             font-size: 22px;
             cursor: pointer;
+
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
         }
         .btn-add-basket:hover {
             background: #8EA90A;
@@ -533,6 +543,10 @@ a:hover                        { text-decoration:none; }
         }
         .list-items-dark li.active {
             background: #9ab21e !important;
+
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.8);
+            -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.8);
+            box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.8);
         }
             .list-items-dark input,
             .list-items-dark a {
@@ -556,15 +570,28 @@ a:hover                        { text-decoration:none; }
                 color: #fff;
                 padding: 13px 0 !important;
                 background: rgba(0, 0, 0, .6) !important;
+
+                -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+                -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+                box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
             }
             .btn-transp:hover {
                 background: #9ab21e !important;
+
+                -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.8);
+                -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.8);
+                box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.8);
             }
             .btn-middle {
                 width: 195px;
             }
     .list-two-column {
-        overflow: hidden;
         text-align: center;
     }
         .list-two-column > li {
