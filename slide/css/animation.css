@@ -1,0 +1,167 @@
+.pt-page-rotateRoomTopOut {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation: rotateRoomTopOut .8s both ease;
+    -moz-transform-origin: 50% 100%;
+    -moz-animation: rotateRoomTopOut .8s both ease;
+    transform-origin: 50% 100%;
+    animation: rotateRoomTopOut .8s both ease
+}
+
+.pt-page-rotateRoomTopIn {
+    -webkit-transform-origin: 50% 0;
+    -webkit-animation: rotateRoomTopIn .8s both ease;
+    -moz-transform-origin: 50% 0;
+    -moz-animation: rotateRoomTopIn .8s both ease;
+    transform-origin: 50% 0;
+    animation: rotateRoomTopIn .8s both ease
+}
+
+.pt-page-rotateRoomBottomOut {
+    -webkit-transform-origin: 50% 0;
+    -webkit-animation: rotateRoomBottomOut .8s both ease;
+    -moz-transform-origin: 50% 0;
+    -moz-animation: rotateRoomBottomOut .8s both ease;
+    transform-origin: 50% 0;
+    animation: rotateRoomBottomOut .8s both ease
+}
+
+.pt-page-rotateRoomBottomIn {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation: rotateRoomBottomIn .8s both ease;
+    -moz-transform-origin: 50% 100%;
+    -moz-animation: rotateRoomBottomIn .8s both ease;
+    transform-origin: 50% 100%;
+    animation: rotateRoomBottomIn .8s both ease
+}
+
+@-webkit-keyframes rotateRoomTopOut {
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+@-moz-keyframes rotateRoomTopOut {
+    to {
+        opacity: .3;
+        -moz-transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+@keyframes rotateRoomTopOut {
+    to {
+        opacity: .3;
+        transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+@-webkit-keyframes rotateRoomTopIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@-moz-keyframes rotateRoomTopIn {
+    from {
+        opacity: .3;
+        -moz-transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@keyframes rotateRoomTopIn {
+    from {
+        opacity: .3;
+        transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@-webkit-keyframes rotateRoomBottomOut {
+    to {
+        opacity: .3;
+        -webkit-transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@-moz-keyframes rotateRoomBottomOut {
+    to {
+        opacity: .3;
+        -moz-transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@keyframes rotateRoomBottomOut {
+    to {
+        opacity: .3;
+        transform: translateY(100%) rotateX(90deg)
+    }
+}
+
+@-webkit-keyframes rotateRoomBottomIn {
+    from {
+        opacity: .3;
+        -webkit-transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+@-moz-keyframes rotateRoomBottomIn {
+    from {
+        opacity: .3;
+        -moz-transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+@keyframes rotateRoomBottomIn {
+    from {
+        opacity: .3;
+        transform: translateY(-100%) rotateX(-90deg)
+    }
+}
+
+.pt-page-delay100 {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-delay: .1s
+}
+
+.pt-page-delay180 {
+    -webkit-animation-delay: .18s;
+    -moz-animation-delay: .18s;
+    animation-delay: .18s
+}
+
+.pt-page-delay200 {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    animation-delay: .2s
+}
+
+.pt-page-delay300 {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s
+}
+
+.pt-page-delay400 {
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.pt-page-delay500 {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.pt-page-delay700 {
+    -webkit-animation-delay: .7s;
+    -moz-animation-delay: .7s;
+    animation-delay: .7s
+}
+
+.pt-page-delay1000 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s
+}

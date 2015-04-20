@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Riga Celebrity Couch</title>
+	<link href="css/animation.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap-header">
+    <header class="header">
+        <nav class="nav-slider main-nav">
+            <ul id="bullets" class="open">
+                <li><a href="#" class="pt-trigger active" data-goto="1">Главная</a></li>
+                <li><a href="#" class="pt-trigger" data-goto="2">Новости</a></li>
+                <li><a href="#" class="pt-trigger" data-goto="3">Продукция</a></li>
+                <li><a href="#" class="pt-trigger" data-goto="4">Галерея</a></li>
+                <li><a href="#" class="pt-trigger" data-goto="5">Контакты</a></li>
+                <li><a href="#" class="pt-trigger" data-goto="6">1</a></li>
+            </ul>
+        </nav>
+
+        <div class="right-block-header">
+            <form class="search-form">
+                <input class="btn-text" type="text" placeholder="Найти...">
+                <input class="btn-search" type="submit" value="OK">
+            </form>
+
+            <ul class="setting-cart">
+                <li class="personal-settings"><a href="page_study.html">Настройки</a></li>
+                <li class="cart"><a href="page_basket.html">Корзина</a></li>
+            </ul>
+        </div><!--end RIGHT-BLOCK-HEADER-->
+    </header>
+</div><!--end WRAP-HEADER-->
+
+<div class="pt-wrapper" id="wrap">
+
+    <button class="pt-trigger" id="next" data-goto="-1"></button>
+    <button class="pt-trigger" id="prev" data-animation="57" data-goto="-2"></button>
+
+    <div class="pt-page pt-page-1">
+        <div class="section section1">
+            <div class="tbl-trigger">
+                <section class="content center">
+                    <span class="main-logo"><img width="233" height="133" src="images/header/main_logo.png" alt="logo"></span>
+
+                    <header class="main-logo">
+                        <h1>Одноразовая посуда из дерева</h1>
+                    </header>
+                </section>
+            </div>
+            <span class="btn-toggle-page btn-bottom" data-goto="2"><a href="#">Вниз</a></span>
+        </div>
+    </div>
+
+     <div class="pt-page pt-page-2">
+        <div class="bg"></div>
+    </div>
+
+    <div class="pt-page pt-page-3">
+        <div class="bg"></div>
+    </div>
+
+    <div class="pt-page pt-page-4">
+        <div class="bg"></div>
+    </div>
+
+    <div class="pt-page pt-page-5">
+       <div class="bg"></div>
+    </div>
+
+    <div class="pt-page pt-page-6">
+        <div class="bg"></div>
+    </div>
+</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <script src="js/assets.min.js"></script>
+    <script src="js/liveriga.min.js"></script>
+  </body>
+</html>
