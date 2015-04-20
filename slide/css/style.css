@@ -685,7 +685,7 @@ a.btn-more-info:hover {
 .center {
     text-align: center;
 }
-.btn-toggle-page a {
+.btn-toggle-page {
     display: block;
     position: absolute;
     left: 50%;
@@ -696,7 +696,7 @@ a.btn-more-info:hover {
     text-indent: -9999px;
     z-index: 100;
 }
-.btn-bottom a {
+.btn-bottom {
     bottom: 15px;
     background: url("../images/arrow_bottom.png") no-repeat;
 }
