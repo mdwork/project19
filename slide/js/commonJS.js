@@ -45,5 +45,7 @@ $(document).ready(function() {
 
     });
 
-    $('')
+    $('.btn-1').on('click', function(){
+        $('.tr1').trigger( "click" );
+    });
 });

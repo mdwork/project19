@@ -920,3 +920,14 @@ html, body {
     width: 100%;
     vertical-align: middle;
 }
+.wrap-inner-home-slide {
+    overflow: hidden;
+    width: 1024px;
+    margin: 0 auto;
+}
+.wrap-inner-home-slide > .slide {
+    float: left;
+}
+.wrap-inner-page {
+    height: 100%;
+}
